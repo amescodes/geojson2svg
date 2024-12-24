@@ -1,6 +1,6 @@
 // extend.js
 // extend b to a with shallow copy
-module.exports = function(a, b) {
+export default function(a, b) {
   var c = {}
   Object.keys(a).forEach(function(key) {
     c[key] = a[key]
@@ -9,4 +9,4 @@ module.exports = function(a, b) {
     c[key] = b[key]
   })
   return c
-} 
+}; 

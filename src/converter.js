@@ -1,5 +1,6 @@
 //converter.js
-var multi = require('multigeojson');
+import pkg from 'multigeojson';
+const { multi } = pkg;
 
 function getCoordString(coords,res,origin, precision, opt) {
   //origin - svg image origin
@@ -88,7 +89,8 @@ function multiPolygon(geom,res,origin,opt) {
   if(!explode) return [paths.join(' ').replace(/Z/g,'') + 'Z'];
   return paths;
 }
-module.exports = {
+
+export default {
   Point: point,
   MultiPoint: multiPoint,
   LineString: lineString,
