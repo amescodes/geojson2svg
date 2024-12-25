@@ -1,6 +1,5 @@
 //converter.js
-import pkg from 'multigeojson';
-const { multi } = pkg;
+import multi from 'multigeojson';
 
 function getCoordString(coords,res,origin, precision, opt) {
   //origin - svg image origin

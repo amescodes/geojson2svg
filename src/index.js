@@ -1,5 +1,4 @@
-import pkg from 'geojson-bbox';
-const { bbox } = pkg;
+import bbox from 'geojson-bbox';
 import extend from 'extend';
 import converter from './converter.js';
 
